@@ -1,0 +1,87 @@
+*, *:after, *:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  background: black;
+  font-family: 'Quicksand', sans-serif; 
+
+
+
+}
+
+a {
+  text-decoration: none;
+  color: #8BC34A; }
+
+section.card {
+  background: white;
+  width: 35%;
+  margin: 30px auto 0 auto;
+  padding: 20px;
+  text-align: right; }
+
+.gutter {
+  padding-top: 30px; }
+
+.logo {
+  color: #8BC34A; }
+
+img {
+  width: 10%; }
+
+.resume {
+  background: white;
+  width: 80%;
+  margin: 200px auto 50px auto;
+  padding: 30px; }
+
+.resume p {
+  font-size: 1.2em; }
+
+.resume h1 {
+  font-size: 3em; }
+
+.links {
+  float: right;
+  margin-right: 40px;
+  color: #8BC34A; }
+
+.about {
+  margin-top: 50px; }
+
+.col-3 {
+  float: left;
+  width: 30%;
+  display: block;
+  margin: 0 auto; }
+
+.grid {
+  display: block;
+  margin: 0 auto;
+  padding-left: 100px;
+  font-size: 1.2em; }
+
+[class*='col-'] {
+  float: left; }
+
+.grid:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+[class*='col-'] {
+  padding-right: 20px; }
+
+[class*='col-']:last-of-type {
+  padding-right: 0; }
+
+.description {
+  padding-left: 25px;
+  font-size: 1.2em; }
+
+.job {
+  font-weight: bold; }
+
+/*# sourceMappingURL=output.css.map */
