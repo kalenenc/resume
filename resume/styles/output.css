@@ -3,53 +3,56 @@
   padding: 0;
   box-sizing: border-box; }
 
-body {
-  background: black;
-  font-family: 'Quicksand', sans-serif; 
-
-
-
-}
-
 a {
   text-decoration: none;
   color: #8BC34A; }
 
-section.card {
-  background: white;
-  width: 35%;
-  margin: 30px auto 0 auto;
-  padding: 20px;
-  text-align: right; }
-
 .gutter {
   padding-top: 30px; }
 
-.logo {
-  color: #8BC34A; }
+body {
+  background: black;
+  font-family: 'Quicksand', sans-serif; }
+  body section.card {
+    background: white;
+    width: 35%;
+    margin: 30px auto 0 auto;
+    padding: 20px;
+    text-align: right; }
+    body section.card .logo {
+      color: #8BC34A; }
+    body section.card img {
+      width: 10%; }
+  body section.resume {
+    background: white;
+    width: 80%;
+    margin: 200px auto 50px auto;
+    padding: 30px; }
+    body section.resume h1 {
+      font-size: 3em; }
+    body section.resume p {
+      font-size: 1.2em; }
+    body section.resume .links {
+      float: right;
+      margin-right: 40px;
+      color: #8BC34A; }
+    body section.resume .about {
+      margin-top: 50px; }
+    body section.resume .description {
+      padding-left: 25px;
+      font-size: 1.2em; }
+    body section.resume .job {
+      font-weight: bold; }
 
-img {
-  width: 10%; }
-
-.resume {
-  background: white;
-  width: 80%;
-  margin: 200px auto 50px auto;
-  padding: 30px; }
-
-.resume p {
+.grid {
+  display: block;
+  margin: 0 auto;
+  padding-left: 100px;
   font-size: 1.2em; }
-
-.resume h1 {
-  font-size: 3em; }
-
-.links {
-  float: right;
-  margin-right: 40px;
-  color: #8BC34A; }
-
-.about {
-  margin-top: 50px; }
+  .grid:after {
+    content: "";
+    display: table;
+    clear: both; }
 
 .col-3 {
   float: left;
@@ -57,31 +60,26 @@ img {
   display: block;
   margin: 0 auto; }
 
-.grid {
-  display: block;
-  margin: 0 auto;
-  padding-left: 100px;
-  font-size: 1.2em; }
-
 [class*='col-'] {
   float: left; }
 
-.grid:after {
-  content: "";
-  display: table;
-  clear: both; }
-
 [class*='col-'] {
   padding-right: 20px; }
+  [class*='col-']:last-of-type {
+    padding-right: 0; }
 
-[class*='col-']:last-of-type {
-  padding-right: 0; }
-
-.description {
-  padding-left: 25px;
-  font-size: 1.2em; }
-
-.job {
-  font-weight: bold; }
+@media only screen and (max-width: 800px) {
+  body section.card {
+    width: 95%; }
+  body section.resume {
+    width: 95%; }
+    body section.resume .links {
+      display: none; }
+  body .grid {
+    padding-left: 50px; }
+    body .grid .col-3 {
+      display: inline-block;
+      width: 60%;
+      margin: 0; } }
 
 /*# sourceMappingURL=output.css.map */
